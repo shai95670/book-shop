@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Book Shop</title>
+</head>
+<body onload="init()">
+    
+    <header class='header-title'>
+        <h1>Book-shop</h1>
+    </header>
+    <div>
+        <button class="add-book-button" onclick='renderBookRow()'>Add New Book row</button>
+    </div>
+    <table class="book-table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th onclick='onTitleClick()'>Title</th>
+                <th onclick='onPriceClick()'>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div class="paging-container"></div>
+    <div class='modal' hidden>
+        <img class='modal-img' src="" alt="picture">
+        <h3 class="modal-price"></h3>
+        <p class="modal-title"></p>
+        <p class="modal-desc"></p>
+        <div class="container">
+            <input type="button" onclick="changeRating(-1)" value="-" />
+            <input type="text" name="quantity" value="0" maxlength="2" max="10" size="1" class="rating" />
+            <input type="button" onclick="changeRating(1)" value="+" />
+        </div>
+        <button onclick="onCloseModal()">X</button>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/localstorage-service.js"></script>
+    <script src="js/book-shop-service.js"></script>
+    <script src="js/book-shop-controller.js"></script>
+</body>
+</html>

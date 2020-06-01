@@ -1,0 +1,63 @@
+body{
+  background-image: url('../img/book-shop_wallpaper.jpg');
+  font-family: monospace;
+}
+
+.add-book-button {
+  display: block;
+  margin: 0 auto;
+  background-color: darksalmon;
+}
+
+.modal {
+  background-color: grey;
+  border: 2px solid black;
+  text-align: center;
+  width: 400px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal > img {
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.book-table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  background-color: #d48657;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+td,
+th {
+  border: 3px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+button{
+  border-radius: 12px;
+  border: 1px solid black;
+  padding: 5px
+}
+
+.paging-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.paging-container > button {
+  background-color:darksalmon
+}
+
+.header-title h1{
+  color:  #e7915b;
+  text-align: center;
+}
